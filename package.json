@@ -1,0 +1,7 @@
+{
+  "name": "pivotalTrackerTotalSelectedPointsForChrome",
+  "version": "1.0.0",
+  "description": "Show the total points for selected Stories ",
+  "main": "content.js",
+  "license": "MIT"
+}
