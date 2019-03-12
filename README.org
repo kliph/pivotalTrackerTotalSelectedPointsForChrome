@@ -1,0 +1,5 @@
+* pivotalTrackerTotalSelectedPointsForChrome
+Breaking Pivotal's layout since 2019
+* Publishing to the Chrome Web Store
+- The account is pivotalTotalSelectedPoints
+- The required keys are in a directory =secrets-for-pivotalTrackerTotalSelectedPointsForChrome=
