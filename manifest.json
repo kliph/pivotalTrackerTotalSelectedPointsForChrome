@@ -1,6 +1,6 @@
 {
   "name": "Pivotal Tracker Total Selected Points",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Display the sum of the points that you have selected in Pivotal Tracker",
   "manifest_version": 2,
   "content_scripts": [{
