@@ -51,6 +51,7 @@ function updateStatusControls() {
 }
 
 // main
-(function() {
-  setInterval(updateStatusControls, 1000)
+(function run() {
+  updateStatusControls()
+  setTimeout(run, 1000)
 })();
