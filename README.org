@@ -1,5 +1,26 @@
 * pivotalTrackerTotalSelectedPointsForChrome
 Breaking Pivotal's layout since 2019
+* Development
+In Chrome, visit [[chrome://extensions/]].
+
+Click =Load unpacked=.  Select this repo's directory.
+
+You will see a small icon indicating that Pivotal Tracker Total Selected Points is installed as an Unpacked extension.
+** To reload the extension
+In Chrome, visit [[chrome://extensions/]].
+
+Click the =refresh= icon in the Pivotal Tracker Total Selected Points card.
+* Creating the zip file for publishing
+#+BEGIN_SRC sh
+  cd ..
+  zip -r -X --exclude=*.git* --exclude=*~*  pivotalTrackerTotalSelectedPointsForChrome.zip ./pivotalTrackerTotalSelectedPointsForChrome/
+  cd -
+#+END_SRC
 * Publishing to the Chrome Web Store
 - The account is pivotalTotalSelectedPoints
-- The required keys are in a directory =secrets-for-pivotalTrackerTotalSelectedPointsForChrome=
+- The required keys are in a directory =secrets-for-pivotalTrackerTotalSelectedPointsForChrome=, if you want to sign your own `.crx` file
+* Publishing an updated version of the extension
+- Visit [[https://chrome.google.com/webstore/developer/dashboard/]] and log in with the pivotalTotalSelectedPoints account
+- Click Edit next to the Pivotal Tracker Total Selected Points extension
+- Zip up the directory
+- Click Upload Updated Package
