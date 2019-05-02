@@ -14,13 +14,21 @@ function storyPoints(selectedStoryElements) {
   });
 }
 
+function uniqueStories(selectedStoryElements) {
+  var uniqueSelectedStories = selectedStoryElements.reduce(function(acc, element) {
+    var key = element.parentElement.parentElement.getAttribute("data-id");
+    acc[key] = element;
+    return acc;
+  }, {});
+
+  return Object.values(uniqueSelectedStories);
+}
+
 function selectedStories() {
   var selectSelectedStories = document.getElementsByClassName("selector selected")
-
   var selectedStories = Array.from(selectSelectedStories);
 
-  return selectedStories;
-
+  return uniqueStories(selectedStories);
 }
 
 function updateStatusControls() {
